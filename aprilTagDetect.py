@@ -16,7 +16,6 @@ results = detector.detect(gray)
 print("[INFO] {} total AprilTags detected".format(len(results)))
 
 def drawBox(results, image):
-    # loop over the AprilTag detection results
     for r in results:
         # extract the bounding box (x, y)-coordinates for the AprilTag
         # and convert each of the (x, y)-coordinate pairs to integers
